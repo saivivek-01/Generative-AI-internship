@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Educator Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav>
+    <strong>Educator Dashboard</strong>
+  </nav>
+
+  <div class="container">
+    <h2>Your Google Classroom Courses</h2>
+
+    {% if courses %}
+      <ul>
+        {% for course in courses %}
+          <li>{{ course.name }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No courses available.</p>
+    {% endif %}
+
+    <div style="margin-top: 30px;">
+      <a href="/" style="text-decoration: none;">
+        <button> Back to Home</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

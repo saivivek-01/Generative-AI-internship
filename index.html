@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduTutor AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .button-group {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .button-group a button {
+      min-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>EduTutor AI</strong>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome to EduTutor AI</h2>
+
+    <form method="post" action="/quiz" style="text-align: center;">
+      <input type="text" name="user_input" placeholder="Enter a topic" required>
+      <button type="submit">Generate Quiz</button>
+    </form>
+
+    <div class="button-group">
+      <a href="/diagnostic" style="text-decoration: none;">
+        <button> Take Diagnostic Test</button>
+      </a>
+      <a href="/login" style="text-decoration: none;">
+        <button> Login with Google Classroom</button>
+      </a>
+      <a href="/educator-dashboard" style="text-decoration: none;">
+        <button> Educator Dashboard</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

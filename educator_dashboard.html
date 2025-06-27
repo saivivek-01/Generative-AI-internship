@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Educator Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav>
+    <strong>Educator Dashboard</strong>
+  </nav>
+
+  <div class="container">
+    <h2>Student Quiz Scores</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Student Email</th>
+          <th>Topic</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for q in quiz_data %}
+        <tr>
+          <td>{{ q.email }}</td>
+          <td>{{ q.topic }}</td>
+          <td>{{ q.score }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div style="margin-top: 30px;">
+      <a href="/" style="text-decoration: none;">
+        <button> Back to Home</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

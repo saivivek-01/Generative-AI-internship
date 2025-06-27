@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generated Quiz</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .quiz-box {
+      white-space: pre-wrap;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>Generated Quiz</strong>
+  </nav>
+
+  <div class="container">
+    <h2>Quiz Output</h2>
+
+    <div class="quiz-box">
+      {{ quiz }}
+    </div>
+
+    <div class="back-button">
+      <a href="/" style="text-decoration: none;">
+        <button> Back to Home</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
