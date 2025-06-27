@@ -1,6 +1,6 @@
 # 🎓 EduTutor AI – Intelligent Learning Assistant
 
-This project is developed as part of the IBM SkillsBuild Internship. EduTutor AI is an adaptive learning platform that generates personalized quizzes using AI technologies.
+This project is developed as part of the Generative AI with IBM Cloud Internship. EduTutor AI is an adaptive learning platform that generates personalized quizzes using AI technologies.
 
 ## 🌟 Features
 - 🧠 AI Quiz Generation using IBM Watsonx
